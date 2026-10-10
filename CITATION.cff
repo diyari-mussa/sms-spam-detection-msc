@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "Please cite the February 2020 thesis and the December 2019 journal article."
+type: software
+title: "SMS Spam Detection System Using Hybrid Gradient Boosting with Wrapper Algorithms"
+version: msc-2020
+date-released: "2020-02"
+license: MIT
+repository-code: "https://github.com/diyari-mussa/sms-spam-detection-msc"
+authors:
+  - family-names: Mussa
+    given-names: Diyari Jalal
+    affiliation: "Sulaimani Polytechnic University"
+preferred-citation:
+  type: thesis
+  title: "SMS Spam Detection System Using Hybrid Gradient Boosting with Wrapper Algorithms"
+  authors:
+    - family-names: Mussa
+      given-names: Diyari Jalal
+  year: 2020
+  month: 2
+  thesis-type: "Master's thesis"
+  institution:
+    name: "Sulaimani Polytechnic University, Technical College of Informatics"
+references:
+  - type: article
+    title: "Relevant SMS Spam Feature Selection Using Wrapper Approach and XGBoost Algorithm"
+    authors:
+      - family-names: Mussa
+        given-names: Diyari Jalal
+      - family-names: Jameel
+        given-names: "Noor Ghazi M."
+    journal: "Kurdistan Journal of Applied Research"
+    volume: 4
+    issue: 2
+    start: 112
+    end: 120
+    year: 2019
+    month: 12
+    doi: "10.24017/science.2019.2.11"

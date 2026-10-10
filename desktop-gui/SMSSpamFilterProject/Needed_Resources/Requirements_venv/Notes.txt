@@ -1,0 +1,10 @@
+https://www.youtube.com/watch?v=KxvKCSwlUv8
+
+creatring venv
+<python version exe | C:\Users\MSI GP66\AppData\Local\Programs\Python\Python37\python.exe> -m venv <venv name>
+
+# activating virtual enviroment
+venvpy37\Scripts\activate.bat 
+
+# installing all the dependencies
+> pip install -r <text file that holds dependencies : requirements.txt>

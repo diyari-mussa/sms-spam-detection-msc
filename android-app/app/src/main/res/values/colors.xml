@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3D7991</color>
+    <color name="colorPrimaryDark">#313C52</color>
+    <color name="colorAccent">#E7E8EA</color>
+    
+    <color name="colorCompoundOrg">#FFE4D9</color>
+    
+    <color name="colorGreenCom">#3D7991</color>
+    <color name="colorGreenLight">#B3D5FF</color>
+
+    <color name="colorWhite">#ffffff</color>
+
+    <color name="colorRedLight">#FFA185</color>
+    <color name="colorBlueLight">#6BD5FF</color>
+</resources>

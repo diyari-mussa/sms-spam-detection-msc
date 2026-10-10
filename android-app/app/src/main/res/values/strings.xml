@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Sms Spam Detection</string>
+    <string name="title_activity_list">ListActivity</string>
+    <!-- Strings used for main activity -->
+    <string name="main_note">Sections below contains the Spam and Normal messages you have received, and information about this project</string>
+    <string name="main_spam">Spam Messages</string>
+    <string name="main_spam_desc">Number of Spam Messages</string>
+    <string name="main_ham">Normal Messages</string>
+    <string name="main_ham_desc">Number of Ham Messages</string>
+    <string name="main_about">About</string>
+    <string name="main_about_desc">Everything about the project</string>
+    <!-- Strings used for details activity -->
+    <string name="details_date">Date Received</string>
+    <string name="details_content">Message Content</string>
+    <!-- Strings used for Confirmation Dialog -->
+    <string name="delete_confirmation">Are you sure want to delete this Message?</string>
+    <string name="no_conf">No</string>
+    <string name="yes_conf">Yes</string>
+    <!-- About Activity -->
+    <string name="about_title_note">this version is demo</string>
+    <string name="about_app_name">App Name : SMS Spam Detection</string>
+    <string name="about_version">Version : 1.0</string>
+
+    <string name="about_msc_info">SMS Spam Detection Using Machine Learning Techniques \n
+                Sulaimani Polytechnic University \n
+                College of Informatics </string>
+    <string name="about_detail">This application is a demo version, based on the thesis project under the name of
+        "SMS Spam Detection Using Machine Learning Techniques". It is created and designed by Msc Student Diyari Jalal Mussa \nand Supervised by Dr. Noor Ghazi. \n
+        The Main intention of this android app is to show how gradient boosting machine learning algorithm can detect the Spam messages and filter them in special
+        folder by analysing the messages features which can be obtained through the content of the text message. </string>
+    <string name="about_note_design">Designed and Created by: Diyari J. Mussa</string>
+    <!-- error dialog -->
+    <string name="ok_error_dialog">ok</string>
+    <string name="text_error_dialog">No message Found! please press ok in order to get back.</string>
+    <!-- first splash activity -->
+    <string name="start_app_title">Lighting SMS Filter</string>
+
+</resources>

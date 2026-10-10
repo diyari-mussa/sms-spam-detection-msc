@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="main_note_sides">21dp</dimen>
+    <dimen name="main_note_bt">50dp</dimen>
+    <dimen name="main_subsections_sides">21dp</dimen>
+    <dimen name="main_subsections_bt">24dp</dimen>
+    <dimen name="main_sub_leaner_sides">12dp</dimen>
+    <dimen name="main_sub_leaner_top">8dp</dimen>
+
+    <dimen name="details_date_sides">31dp</dimen>
+    <dimen name="details_date_top">21dp</dimen>
+    <dimen name="details_date_bottom">15dp</dimen>
+    <dimen name="details_content_sides">21dp</dimen>
+</resources>

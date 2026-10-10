@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    tools:context=".DetailsActivity">
+
+    <TextView
+        android:id="@+id/tvDateRcv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/details_date_sides"
+        android:layout_marginRight="@dimen/details_date_sides"
+        android:layout_marginTop="@dimen/details_date_top"
+        android:layout_marginBottom="@dimen/details_date_bottom"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="left"
+        android:text="@string/details_date" />
+
+    <LinearLayout
+        android:id="@+id/linearDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/details_content_sides"
+        android:layout_marginLeft="@dimen/details_content_sides"
+        android:layout_marginEnd="@dimen/details_content_sides"
+        android:layout_marginRight="@dimen/details_content_sides"
+        android:layout_marginBottom="@dimen/main_subsections_bt"
+        android:background="@drawable/detail_item"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvMessageDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/details_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

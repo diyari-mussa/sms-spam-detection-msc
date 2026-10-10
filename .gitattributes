@@ -1,0 +1,5 @@
+# Keep the Gradle wrapper script in LF so a checkout does not rewrite it.
+android-app/gradlew text eol=lf
+
+# The thesis is a binary document.
+docs/thesis/*.pdf binary

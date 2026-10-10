@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvMainNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/main_note_sides"
+        android:layout_marginRight="@dimen/main_note_sides"
+        android:layout_marginTop="@dimen/main_note_bt"
+        android:layout_marginBottom="@dimen/main_note_bt"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="left"
+        android:text="@string/main_note" />
+
+    <LinearLayout
+        android:id="@+id/linearSpamMessages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/main_subsections_sides"
+        android:layout_marginLeft="@dimen/main_subsections_sides"
+        android:layout_marginEnd="@dimen/main_subsections_sides"
+        android:layout_marginRight="@dimen/main_subsections_sides"
+        android:layout_marginBottom="@dimen/main_subsections_bt"
+        android:background="@drawable/home_item"
+        android:onClick="onSpamMessagesButtonClick"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_spam_img" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/main_sub_leaner_sides"
+            android:layout_marginLeft="@dimen/main_sub_leaner_sides"
+            android:layout_marginTop="@dimen/main_sub_leaner_top"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_spam"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/lblNumSpam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_spam_desc"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="italic"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/home_item"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/main_subsections_sides"
+        android:layout_marginRight="@dimen/main_subsections_sides"
+        android:layout_marginBottom="@dimen/main_subsections_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginStart="@dimen/main_subsections_sides"
+        android:layout_marginEnd="@dimen/main_subsections_sides"
+        android:onClick="onHamMessagesButtonClick"
+        android:id="@+id/linearHamMessages">
+
+        <ImageView
+            android:src="@drawable/ic_inbox_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/main_sub_leaner_top"
+            android:layout_marginLeft="@dimen/main_sub_leaner_sides"
+            android:layout_marginStart="@dimen/main_sub_leaner_sides">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_ham"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/lblNumHam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_ham_desc"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="italic"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/home_item"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/main_subsections_sides"
+        android:layout_marginRight="@dimen/main_subsections_sides"
+        android:layout_marginBottom="@dimen/main_subsections_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginStart="@dimen/main_subsections_sides"
+        android:layout_marginEnd="@dimen/main_subsections_sides"
+        android:onClick="onAboutButtonClick"
+        android:id="@+id/linearAbout">
+
+        <ImageView
+            android:src="@drawable/ic_about_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/main_sub_leaner_top"
+            android:layout_marginLeft="@dimen/main_sub_leaner_sides"
+            android:layout_marginStart="@dimen/main_sub_leaner_sides">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_about"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_about_desc"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="italic"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutVar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="25dp"
+            android:background="@drawable/row_item">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvSmsSender"
+                android:text="MessageSender"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvSmsContent"
+                android:layout_below="@+id/tvSmsSender"
+                android:text="MessageContent"
+                android:textStyle="italic"
+                android:maxLength="40"
+                android:paddingTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvSmsLabel"
+                android:layout_below="@+id/tvSmsContent"
+                android:text="MessageLAbel"
+                android:textStyle="italic"
+                android:paddingTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDateReceived"
+                android:layout_below="@+id/tvSmsLabel"
+                android:text="MessageDate"
+                android:textStyle="italic"
+                android:paddingTop="5dp"/>
+
+            <TableRow
+                android:layout_alignParentRight="true"
+                android:layout_alignBaseline="@+id/tvSmsLabel"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/deleteButton"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:background="@drawable/ic_delete_img"/>
+
+            </TableRow>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

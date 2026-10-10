@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2B8EE1E2-5AAD-4521-BC85-5BEA7734F373}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SMSSpamFilterProject</RootNamespace>
+    <AssemblyName>SMSSpamFilterProject</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LumenWorks.Framework.IO, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5ad3ea2f85776344, processorArchitecture=MSIL">
+      <HintPath>..\packages\LumenWorksCsvReader.4.0.0\lib\net45\LumenWorks.Framework.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStart.Designer.cs">
+      <DependentUpon>FormStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStart.resx">
+      <DependentUpon>FormStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="bin\Debug\Datasets\SMSSpamCollectionfixed.csv" />
+    <None Include="bin\Debug\Datasets\TrainTestSpamNew.csv" />
+    <None Include="bin\Debug\SMSSpamFilterProject.exe.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_3_2667537428.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\csvicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excelicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Feature Selection Results\bin_sbs_lgb.txt" />
+    <Content Include="bin\Debug\Feature Selection Results\bin_sbs_xgb.txt" />
+    <Content Include="bin\Debug\Feature Selection Results\GBM WSS\bin_sbs_gbm.txt" />
+    <Content Include="bin\Debug\Feature Selection Results\GBM WSS\gbm_last_test.txt" />
+    <Content Include="bin\Debug\Feature Selection Results\GBM WSS\gbm_last_test_sfs.txt" />
+    <Content Include="bin\Debug\Feature Selection Results\GBM WSS\gbm_sbs.txt" />
+    <Content Include="bin\Debug\Feature Selection Results\GBM WSS\gbm_sbs_new.txt" />
+    <Content Include="bin\Debug\Feature Selection Results\GBM WSS\Random state Fix\sbs_gbm_rs_1.txt" />
+    <Content Include="bin\Debug\Feature Selection Results\GBM WSS\Random state Fix\sbs_gbm_rs_2.txt" />
+    <Content Include="bin\Debug\Feature Selection Results\GBM WSS\Random state Fix\sfs_gbm_rs_1.txt" />
+    <Content Include="bin\Debug\Feature Selection Results\GBM WSS\Random state Fix\sfs_gbm_rs_2.txt" />
+    <Content Include="bin\Debug\Feature Selection Results\GBM WSS\test_gbm_sbs_all.txt" />
+    <Content Include="bin\Debug\Feature Selection Results\GBM WSS\test_gbm_sfs_all.txt" />
+    <Content Include="bin\Debug\Feature Selection Results\LGB WSFS\lgb_sbs_result.txt" />
+    <Content Include="bin\Debug\Feature Selection Results\LGB WSFS\lgb_sfs_result.txt" />
+    <Content Include="bin\Debug\Feature Selection Results\lgbm_sbs.txt" />
+    <Content Include="bin\Debug\Feature Selection Results\lgbm_sbs_new.txt" />
+    <Content Include="bin\Debug\Feature Selection Results\LGB_New_Paper\lgb_sbs_6.txt" />
+    <Content Include="bin\Debug\Feature Selection Results\test_lgb_sbs_all.txt" />
+    <Content Include="bin\Debug\Feature Selection Results\test_lgb_sfs_all.txt" />
+    <Content Include="bin\Debug\Feature Selection Results\test_xgb_sbs_all.txt" />
+    <Content Include="bin\Debug\Feature Selection Results\test_xgb_sfs_all.txt" />
+    <Content Include="bin\Debug\Feature Selection Results\XGB WSFS\xgb_sbs_result.txt" />
+    <Content Include="bin\Debug\Feature Selection Results\XGB WSFS\xgb_sfs_result.txt" />
+    <Content Include="bin\Debug\Feature Selection Results\xgb_sbs.txt" />
+    <Content Include="bin\Debug\LumenWorks.Framework.IO.dll" />
+    <Content Include="bin\Debug\LumenWorks.Framework.IO.pdb" />
+    <Content Include="bin\Debug\LumenWorks.Framework.IO.xml" />
+    <Content Include="bin\Debug\Requirements\FeatureSelection.py" />
+    <Content Include="bin\Debug\Requirements\Preprocessing.py" />
+    <Content Include="bin\Debug\Requirements\TestNewDataset.py" />
+    <Content Include="bin\Debug\SMSSpamFilterProject.exe" />
+    <Content Include="bin\Debug\SMSSpamFilterProject.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
